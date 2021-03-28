@@ -47,6 +47,9 @@ def preprocess(doc, hyperlink_removal=True, html_stripping=True,
     if text_lower_case:
         doc = doc.lower()
 
+    # Remove extra newlines
+    doc = re.sub(r'[\r|\n|\r\n]+', ' ', doc)
+
     # Expand contractions
     if contraction_expansion:
         doc = expand_contractions(doc)
@@ -77,6 +80,7 @@ def preprocess(doc, hyperlink_removal=True, html_stripping=True,
 
     # Remove extra whitespace
     doc = re.sub(' +', ' ', doc)
+    doc = doc.lstrip().rstrip()
 
     return doc
 
