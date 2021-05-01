@@ -4,8 +4,6 @@ Since the pandemic started, various research teams have worked on analyzing the 
 
 Despite all the previous work, little is done on analyzing the public's perception of the COVID-19 vaccine. For months, scientists around the world have been racing to produce an effective vaccine and governments have been throwing billions at pharmaceutical companies to be first in line for access. But despite the severe disruption caused by the pandemic, a significant minority of people say they don’t want to register the vaccine even when one becomes available. As a result, this project analyzes the tweets with the #CovidVaccine hashtag as an attempt to acquire more insights into the public's perception and the root cause of skepticism towards COVID vaccines. 
 
-Website Repository: https://github.com/zhiyichenGT/zhiyichenGT.github.io
-
 ## Problem Definition
 This project tackles a few problems: what is the public’s perception and acceptance of the COVID-19 vaccine. If any skepticism exists, what are the major factors contributing to the skepticism. To address the problem, we will use supervised learning to classify the sentiments of the tweets and utilize unsupervised learning to discovered inherent topics upon which the vaccine skepticism might have grown. Aside from that, we plan to incorporate the geolocations of the users as well as their profile descriptions as features into our models.
 
